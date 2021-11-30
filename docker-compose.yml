@@ -15,4 +15,6 @@ services:
       - "80:80"
     links:
       - mongo
+    volumes:
+      - ./nginx.conf:/usr/local/nginx/conf/nginx.conf
 

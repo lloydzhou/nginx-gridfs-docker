@@ -1,7 +1,7 @@
 build:
 	docker build -t lloydzhou/nginx-gridfs -f Dockerfile . | tee /tmp/build.log
 
-push:
+push: build
 	docker push lloydzhou/nginx-gridfs
 
 test:
