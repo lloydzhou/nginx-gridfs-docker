@@ -96,3 +96,32 @@ curl http://localhost/gridfs/61a60624833b6500b140e6a2 -vvv -o /dev/null
 100 11314  100 11314    0     0  6172k      0 --:--:-- --:--:-- --:--:-- 10.7M
 ```
 
+## upload file
+```
+curl http://localhost/gridfs/61a717e9c0944d0008580e03 -X POST -d @README.md -H 'Content-Type: text/plain' -vvv
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1:80...
+* Connected to localhost (127.0.0.1) port 80 (#0)
+> POST /gridfs/61a717e9c0944d0008580e03 HTTP/1.1
+> Host: localhost
+> User-Agent: curl/7.80.0
+> Accept: */*
+> Content-Type: text/plain
+> Content-Length: 315625
+> 
+* We are completely uploaded and fine
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 201 Created
+< Server: nginx/1.19.9
+< Date: Wed, 01 Dec 2021 09:14:51 GMT
+< Content-Type: text/plain
+< Content-Length: 2
+< Connection: keep-alive
+< X-File-Size: 315625
+< X-File-MD5: 62c0b2a2fd0d56421d3412d638b5fc7e
+< X-File-Id: 61a717e9c0944d0008580e03
+< 
+* Connection #0 to host localhost left intact
+OK
+```
+

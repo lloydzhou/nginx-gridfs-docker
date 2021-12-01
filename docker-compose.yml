@@ -17,4 +17,5 @@ services:
       - mongo
     volumes:
       - ./nginx.conf:/usr/local/nginx/conf/nginx.conf
+        # - ./nginx:/usr/local/nginx/sbin/nginx
 
