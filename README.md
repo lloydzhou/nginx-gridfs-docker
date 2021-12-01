@@ -98,7 +98,7 @@ curl http://localhost/gridfs/61a60624833b6500b140e6a2 -vvv -o /dev/null
 
 ## upload file
 ```
-curl http://localhost/gridfs/61a717e9c0944d0008580e03 -X POST -d @README.md -H 'Content-Type: text/plain' -vvv
+curl http://localhost/gridfs/61a717e9c0944d0008580e03 -X POST --data-binary @README.md -H 'Content-Type: text/plain' -vvv
 Note: Unnecessary use of -X or --request, POST is already inferred.
 *   Trying 127.0.0.1:80...
 * Connected to localhost (127.0.0.1) port 80 (#0)
