@@ -1,6 +1,6 @@
 # nginx-gridfs
 
-https://github.com/truezodic/nginx-gridfs
+https://github.com/lloydzhou/nginx-gridfs-1
 
 Nginx module for serving files from MongoDB's GridFS( support SCRAM-SHA-1)
 
